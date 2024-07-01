@@ -11,6 +11,8 @@ public class StageManager : MonoBehaviour, IEndGame, IScore, IScoreAdder, IScore
     private ScoreBoard targetScoreBoard;
     [SerializeField]
     private ScoreBoard bestScoreBoard;
+    [SerializeField]
+    private GameObject resultPanel;
 
     public int Score { get; set; }
     public int Combo { get; set; }
@@ -32,23 +34,18 @@ public class StageManager : MonoBehaviour, IEndGame, IScore, IScoreAdder, IScore
         scoreBoard.SetScore();
         timer.InitTimer();
         IsGameRunning = true;
+        GameManager.Instance.LoadScore();
         targetScoreBoard.SetScore(GameManager.Instance.TargetScore);
         bestScoreBoard.SetScore(GameManager.Instance.BestScore);
+        resultPanel.SetActive(false);
     }
     // 게임 종료시 호출
     public void EndGame()
     {
         Debug.Log("Time's up!");
         IsGameRunning = false;
-        GameManager.Instance.SaveScore(Score);   
-        if(Score >= GameManager.Instance.TargetScore)
-        {
-            Debug.Log("You Win!");
-        }
-        else
-        {
-            Debug.Log("You Lose!");
-        }
+        GameManager.Instance.SaveScore(Score);
+        resultPanel.SetActive(true);
     }
     // 점수 추가
     public void AddScore(int amount)

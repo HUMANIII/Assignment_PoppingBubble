@@ -39,7 +39,7 @@ public class ScoreBoard : MonoBehaviour
             }
         }
     }
-
+    //변하지 않는 점수를 표시할때 사용
     public void SetScore(int value)
     {
         scoreValueText.text = value.ToString();

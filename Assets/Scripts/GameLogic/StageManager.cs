@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -19,7 +20,21 @@ public class StageManager : MonoBehaviour, IEndGame, IScore, IScoreAdder, IScore
     [SerializeField, Tooltip("콤보 시 더해지는 점수")]
     private int comboBonus = 50;
 
-    public bool IsGameRunning { get; private set; }
+    public Action GameFinished { get; set; }
+
+    private bool isGameRunning;
+    public bool IsGameRunning 
+    { 
+        get { return isGameRunning; } 
+        private set 
+        {
+            isGameRunning = value;
+            if(!isGameRunning)
+            {
+                GameFinished?.Invoke();
+            }
+        } 
+    }
     
 
     private void Start()

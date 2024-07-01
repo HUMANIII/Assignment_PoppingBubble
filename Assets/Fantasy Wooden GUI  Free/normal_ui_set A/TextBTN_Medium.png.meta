@@ -1,10 +1,14 @@
 fileFormatVersion: 2
-guid: 6b2c405cb3fb80f4ab7e8b2e41ec7cf7
+guid: efee20b64d1e73942a29ba61ce3379c3
+AssetOrigin:
+  serializedVersion: 1
+  productId: 103811
+  packageName: 'Fantasy Wooden GUI : Free'
+  packageVersion: 2.0
+  assetPath: Assets/Fantasy Wooden GUI  Free/normal_ui_set A/TextBTN_Medium.png
+  uploadId: 294936
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 6995406723415263783
-    second: DS2_0
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,9 +70,9 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
+  applyGammaDecoding: 1
   swizzle: 50462976
-  cookieLightType: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
@@ -113,23 +117,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DS2_0
+      name: TextBTN_Medium_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 800
-        height: 420
+        width: 281
+        height: 110
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 16, y: 31, z: 16, w: 23}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 72acb880a5da41160800000000000000
-      internalID: 6995406723415263783
+      spriteID: 41d0586479e9b3746b640dd014a502d7
+      internalID: -730077812
       vertices: []
       indices: 
       edges: []
@@ -138,14 +142,15 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      TextBTN_Medium_0: -730077812
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

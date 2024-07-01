@@ -20,6 +20,12 @@ public class ResultPanel : MonoBehaviour
 
     private void OnEnable()
     {
+        SetResultPanel();
+    }
+
+    //결과창 설정
+    private void SetResultPanel()
+    {
         if (score.Score >= GameManager.Instance.TargetScore)
         {
             resultText.text = "You Win!";

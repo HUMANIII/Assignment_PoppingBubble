@@ -14,5 +14,9 @@ public class Test : MonoBehaviour
         {
             stageManager.SubtractScore(50);
         }
+        if(Input.GetKeyDown(KeyCode.R))//게임 재시작
+        {
+            stageManager.InitGame();
+        }   
     }
 }

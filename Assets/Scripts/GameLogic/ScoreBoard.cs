@@ -39,4 +39,9 @@ public class ScoreBoard : MonoBehaviour
             }
         }
     }
+
+    public void SetScore(int value)
+    {
+        scoreValueText.text = value.ToString();
+    }
 }

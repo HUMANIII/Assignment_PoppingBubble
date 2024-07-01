@@ -46,7 +46,7 @@ public class Timer : MonoBehaviour
     }
 
     // 타이머 초기화
-    private void InitTimer()
+    public void InitTimer()
     {
         timeLeft = maxTime;
         timerSlider.maxValue = maxTime;
